@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Incorporate Final Project</title>
+
+    <link rel="stylesheet" type="text/css" href="./libraries/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+
+    <!-- Bootstrap JS is a JS library with pre-made functionality. Requires jQuery and popper.js to run.
+         JQuery is a very powerful, general-purpose library that can manipulate the DOM
+         Popper is a new positioning library for tooltips. It was annoying to integrate locally, so using a web link here.-->
+    <script src="./libraries/jquery-3.2.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="./libraries/bootstrap.js"></script>
+    <script src="./libraries/d3.v4.2.6.min.js"></script>
+
+</head>
+
+    <input type="range" min="1987" max="2007" value="1" class="slider" id="mySlider" oninput="sliderMoved(value)">
+
+    <input type="radio" id="radioButton1" name="sort" value="alphabetical" onchange="radioChange(value)">
+    <label for="radiobutton1">Sort Alphabetical</label>
+
+    <input type="radio" id="radioButton2" name="sort" value="decreasing" onchange="radioChange(value)" checked>
+    <label for="radiobutton2">Sort by Decreasing Value</label>
+
+    <br>
+
+    <svg width="800" height="600"></svg>
+
+</body>
+
+<script src="./index.js"></script>
+
+</html>

@@ -114,6 +114,8 @@ function drawPoints(pointData){
 
 function updateData(selectedYear){
 
+    console.log(selectedYear);
+
     if(sortOrder == 'alphabetical'){
 
         return nestedData.filter(function(d){return d.key == selectedYear})[0].values.sort(function(a,b){
@@ -140,5 +142,6 @@ function sliderMoved(value){
 
 function radioChange(value){
     sortOrder = value;
-    updateData(currentYear)l
+    newData = updateData(currentYear);
+    drawPoints(newData);
 }
