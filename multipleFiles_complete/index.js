@@ -17,7 +17,6 @@ var scaleY = d3.scaleLinear().range([400, 0]);
 var sortOrder = "decreasing";
 var currentYear = 1987;
 
-drawPoints();
 
 //import the data from the .csv file
 d3.csv('./countryData_topten.csv', function(dataIn){
