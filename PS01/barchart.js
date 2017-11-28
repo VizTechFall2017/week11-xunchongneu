@@ -260,4 +260,3 @@ function sliderMoved(value){
         .attr("opacity", 0.3);
     };
 
-
